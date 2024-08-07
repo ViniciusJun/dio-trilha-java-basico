@@ -14,5 +14,8 @@ public class TiposVariaveis {
         short numeroCurto = 1;
         int numeroNormal = numeroCurto;
         short numeroCurto2 = (short) numeroNormal; //Por mais que tenhamos ciência do valor quenumeroNormal cabe é um short, o Java não permite correr o risco. pois o Java é fortemente tipado.
+
+        //para declarar uma variavel que o seu valor atribuido nao seja modificado você tera que adicionar no inicio da linha o comando "Final" e o nome da variavel em CAIXA_ALTA, ex:
+        final double VALOR_DE_PI = 3.14;
     }
 }

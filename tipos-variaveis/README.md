@@ -37,6 +37,95 @@ Em Java, os tipos primitivos são os blocos básicos de construção para a mani
 
 Esses tipos primitivos são essenciais para a programação em Java, fornecendo uma base eficiente e direta para a manipulação de dados simples.
 
-## Dependency Management
+# Declaração de Variáveis
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Uma variável é uma identificação de um espaço na memória utilizado pelo programa. Seguindo as convenções das linguagens de programação, toda variável é composta por: tipo de dado + identificação + valor atribuído.
+
+A estrutura padrão para declarar uma variável é:
+
+```java
+<Tipo> <nomeVariavel> <atribuicaoDeValorOpcional>
+```
+
+Exemplos:
+
+```java
+int idade; // Tipo "int", nome "idade", sem valor atribuído.
+int anoFabricacao = 2021; // Tipo "int", nome "anoFabricacao", valor 2021.
+double salarioMinimo = 2500.00; // Tipo "double", nome "salarioMinimo", valor 2500.00.
+```
+
+## Peculiaridades com Tipos Específicos
+
+Alguns tipos de dados têm particularidades. Veja o exemplo abaixo:
+
+```java
+public class TipoDados {
+    public static void main(String[] args) {
+        byte idade = 123;
+        short ano = 2021;
+        int cep = 21070333; // Se começar com zero, talvez precise ser de outro tipo
+        long cpf = 98765432109L; // Se começar com zero, talvez precise ser de outro tipo
+        float pi = 3.14F;
+        double salario = 1275.33;
+    }
+}
+```
+
+Observe que o tipo `long` precisa terminar com `L`, o tipo `float` precisa terminar com `F`, e algumas situações podem exigir alterações nos tipos de dados convencionais.
+
+## Fortemente Tipado
+
+Java é uma linguagem fortemente tipada. Considere o exemplo abaixo:
+
+```java
+// TiposEVariaveis.java
+
+short numeroCurto = 1;
+int numeroNormal = numeroCurto;
+short numeroCurto2 = numeroNormal; // Isso não é permitido pelo Java.
+```
+
+Mesmo sabendo que `numeroNormal` cabe em um `short`, Java não permite tal conversão direta.
+
+## Variáveis e Constantes
+
+Uma variável é uma área de memória associada a um nome, que pode armazenar valores de um determinado tipo. Um tipo de dado define um conjunto de valores e operações. Java é uma linguagem fortemente tipada, diferentemente de linguagens como JavaScript, onde declarar o tipo da variável não é obrigatório.
+
+Em Java, utilizamos identificadores que representam uma referência a um valor em memória, e esta referência pode ser redirecionada para outro valor, daí o nome "variável".
+
+Constantes são valores que, uma vez declarados, não podem ser modificados. Em Java, utilizamos a palavra reservada `final` para declarar constantes. Por convenção, constantes são escritas em CAIXA ALTA.
+
+### Exemplo de Variáveis e Constantes
+
+```java
+public class ExemploVariavel {
+    public static void main(String[] args) {
+        /*
+         * Esta linha é considerada uma declaração de variável.
+         * Iniciamos a existência da variável numero com valor 5.
+         * Regra: tipo + nome + valor
+         */
+        int numero = 5;
+
+        /*
+         * Na linha abaixo, alteramos o valor da variável para 10.
+         * Observe que o tipo não é mais necessário, pois a variável já foi declarada anteriormente.
+         */
+        numero = 10;
+
+        System.out.print(numero);
+
+        /*
+         * Ao usar a palavra reservada final, você determina que esta variável
+         * jamais poderá obter outro valor.
+         * A linha 25 vai apresentar um erro de compilação, pois isso é considerado uma CONSTANTE na linguagem Java.
+         */
+        final double VALOR_DE_PI = 3.14;
+
+        VALOR_DE_PI = 3.15; // Esta linha vai apresentar erro de compilação!
+    }
+}
+```
+
+Para declarar uma variável como uma constante, utilizamos a palavra `final`. Por convenção, estas variáveis são escritas em CAIXA ALTA.
