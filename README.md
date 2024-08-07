@@ -7,8 +7,8 @@ Bem-vindo ao Repositório de Estudo de Java Básico! Este repositório foi criad
 
 Este repositório está organizado em várias seções, cada uma focada em um aspecto fundamental da programação em Java:
 
-1. **Conceitos Básicos**: Introdução à linguagem Java, instalação do JDK, configuração do ambiente de desenvolvimento, e primeiros passos.
-2. **Tipos de variaveis**: Explicação detalhada sobre os tipos de dados primitivos em Java, incluindo inteiros, fracionados, lógicos e caracteres.
+1. [**Conceitos Básicos**]([dio-trilha-java-basico\conceitos-basicos\README.md]): Introdução à linguagem Java, instalação do JDK, configuração do ambiente de desenvolvimento, e primeiros passos.
+2. [**Tipos de variaveis**]([dio-trilha-java-basico\tipos-variaveis\README.md]): Explicação detalhada sobre os tipos de dados primitivos em Java, incluindo inteiros, fracionados, lógicos e caracteres.
 3. **Controle de Fluxo**: Estruturas de decisão (if, switch) e loops (for, while, do-while).
 4. **Estruturas de Dados**: Arrays, listas, e outras coleções.
 5. **Programação Orientada a Objetos (POO)**: Classes, objetos, herança, polimorfismo, encapsulamento e interfaces.
