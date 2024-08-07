@@ -9,12 +9,7 @@ Este repositório está organizado em várias seções, cada uma focada em um as
 
 1. [**Conceitos Básicos**](https://github.com/ViniciusJun/dio-trilha-java-basico/tree/main/conceitos-basicos): Introdução à linguagem Java, instalação do JDK, configuração do ambiente de desenvolvimento, e primeiros passos.
 2. [**Tipos de variaveis**](https://github.com/ViniciusJun/dio-trilha-java-basico/tree/main/tipos-variaveis): Explicação detalhada sobre os tipos de dados primitivos em Java, incluindo inteiros, fracionados, lógicos e caracteres.
-3. **Controle de Fluxo**: Estruturas de decisão (if, switch) e loops (for, while, do-while).
-4. **Estruturas de Dados**: Arrays, listas, e outras coleções.
-5. **Programação Orientada a Objetos (POO)**: Classes, objetos, herança, polimorfismo, encapsulamento e interfaces.
-6. **Tratamento de Exceções**: Maneiras de lidar com erros e exceções em Java.
-7. **Bibliotecas e APIs Comuns**: Introdução às bibliotecas padrão do Java e uso de APIs comuns.
-8. **Projetos Práticos**: Exemplos de projetos simples para aplicar os conhecimentos adquiridos.
+
 
 ## Como Usar Este Repositório
 
