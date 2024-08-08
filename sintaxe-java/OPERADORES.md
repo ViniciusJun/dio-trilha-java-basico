@@ -88,5 +88,78 @@ String frase = "Eu tenho " + idade + " anos.";
 
 A concatenação de strings pode ser muito útil para criar mensagens dinâmicas e personalizadas em uma aplicação.
 
----
 
+
+# Operadores Unários
+
+Os operadores unários em Java são operadores que atuam sobre um único operando para realizar diversas operações, como incremento, decremento, negação lógica, entre outras. Esses operadores são frequentemente utilizados para simplificar expressões e manipular valores de variáveis.
+
+## Tipos de Operadores Unários
+
+### 1. Operador de Incremento (`++`)
+
+O operador de incremento `++` aumenta o valor da variável em 1. Ele pode ser usado em duas formas:
+
+- **Pré-incremento (`++variável`)**: Incrementa o valor da variável antes de usá-lo na expressão.
+- **Pós-incremento (`variável++`)**: Usa o valor da variável na expressão e depois o incrementa.
+
+#### Exemplos de Incremento
+
+```java
+int x = 5;
+
+int y = ++x; // x é incrementado para 6, e y recebe 6
+int z = x++; // z recebe 6, e depois x é incrementado para 7
+```
+
+### 2. Operador de Decremento (`--`)
+
+O operador de decremento `--` reduz o valor da variável em 1. Assim como o incremento, ele pode ser usado em duas formas:
+
+- **Pré-decremento (`--variável`)**: Decrementa o valor da variável antes de usá-lo na expressão.
+- **Pós-decremento (`variável--`)**: Usa o valor da variável na expressão e depois o decrementa.
+
+#### Exemplos de Decremento
+
+```java
+int a = 10;
+
+int b = --a; // a é decrementado para 9, e b recebe 9
+int c = a--; // c recebe 9, e depois a é decrementado para 8
+```
+
+### 3. Operador de Negação Lógica (`!`)
+
+O operador de negação lógica `!` inverte o valor booleano de uma expressão. Se a expressão é `true`, ele a torna `false`, e vice-versa.
+
+#### Exemplos de Negação Lógica
+
+```java
+boolean verdade = true;
+boolean falso = !verdade; // falso é false
+```
+
+### 4. Operador Unário de Negação (`-`)
+
+O operador unário de negação `-` inverte o sinal de um número, tornando positivo em negativo, e negativo em positivo.
+
+#### Exemplo de Negação
+
+```java
+int num = 10;
+int negNum = -num; // negNum é -10
+
+int posNum = -negNum; // posNum é 10 novamente
+```
+
+### 5. Operador de Valor Positivo (`+`)
+
+O operador `+`, quando usado unariamente, não altera o valor da variável, mas pode ser usado para indicar que o valor é positivo, embora seja pouco utilizado na prática.
+
+#### Exemplo de Operador Positivo
+
+```java
+int positivo = +5; // positivo é 5
+```
+
+Os operadores unários são fundamentais para manipulações rápidas e eficientes de valores e variáveis em Java. Eles podem parecer simples, mas seu uso correto pode fazer uma grande diferença no comportamento do código.

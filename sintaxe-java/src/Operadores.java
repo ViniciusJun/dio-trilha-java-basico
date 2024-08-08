@@ -3,9 +3,9 @@ public class Operadores {
     public static void main(String[] args) {
 
         //Atribuição: O operador de atribuição é utilizado para definir o valor inicial ou sobrescrever o valor de uma variável. em Java, definimos um tipo, nome e opcionalmente atribuímos um valor à variável através do operador de atribuição.
-        String nome = "GLEYSON";
-        int idade = 22;
-        double peso = 68.5;
+        String nome = "VINICIUS";
+        int idade = 24;
+        double peso = 61.5;
         char sexo = 'M';
         boolean doadorOrgao = false;
         //Date dataNascimento = new Date();
@@ -45,6 +45,28 @@ public class Operadores {
         concatenacao = "1"+(1+1+1); //usando evidencia o codigo faz a somas dos valores munericos mesmo apos a string
 
         System.out.println(concatenacao);
+
+        //operadores Unarios: Eles realizam alguns trabalhos básicos como incrementar, decrementar, inverter valores numéricos e booleanos
+        int numero = 5;
+                
+        //Imprimindo o numero negativo
+        System.out.println(- numero);
+
+        //incrementando numero em mais 1 numero, imprime 6
+        numero ++;
+        System.out.println(numero);
+
+        //incrementando numero em mais 1 numero, imprime 7
+        System.out.println(numero ++);// ops algo de errado não está certo
+
+        System.out.println(numero);// agora sim, numero virou 7
+
+        //ordem de precedencia conta aqui
+        System.out.println(++ numero);
+
+        boolean verdadeiro = true;
+
+        System.out.println("Inverteu " + !verdadeiro);
     }
 
 }
